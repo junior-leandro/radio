@@ -42,3 +42,37 @@ footer a {
   color: #ffffff;
   text-decoration: none;
 }
+
+.app {
+  color: #000000;
+  text-align: center;
+  padding: 1em;
+  background-color: #f0f8ff;
+}
+
+.app__texto {
+  color: #630366;
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+.app h2 {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.app__icones {
+  display: flex;
+  justify-content: center;
+}
+
+.app__icones img {
+  width: 80px;
+  margin: 0.5em;
+}
+
+.app__footer {
+  font-size: 0.7em;
+  font-style: italic;
+  padding: 1em;
+}
