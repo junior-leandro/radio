@@ -76,3 +76,22 @@ footer a {
   font-style: italic;
   padding: 1em;
 }
+
+
+.ultimas-musicas {
+  width: 80%;
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+.ultimas-musicas h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.ultimas-musicas iframe {
+  padding-top: 1em;
+}
