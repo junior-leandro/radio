@@ -4,25 +4,24 @@ body {
   text-align: center;
   margin: auto;
   width: 100%;
+  background-image: url(../images/PLAYER.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
   width: 100%;
-  height: 8em;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-h1 {
-  text-transform: uppercase;
-  margin: auto;
-  font-size: 30px;
-  font-weight: 500;
-}
 
 
 .player {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +30,8 @@ h1 {
 
 footer {
   width: 100%;
-  height: 8em;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,55 +43,8 @@ footer a {
   text-decoration: none;
 }
 
-.app {
-  color: #000000;
-  text-align: center;
-  padding: 1em;
-  background-color: #f0f8ff;
-}
-
-.app__texto {
-  color: #630366;
-  font-size: 1.2em;
-  padding: 1em;
-}
-
-.app h2 {
-  font-size: 2em;
-  padding-bottom: 1em;
-}
-
-.app__icones {
-  display: flex;
-  justify-content: center;
-}
-
-.app__icones img {
-  width: 80px;
-  margin: 0.5em;
-}
-
-.app__footer {
-  font-size: 0.7em;
-  font-style: italic;
-  padding: 1em;
-}
 
 
-.ultimas-musicas {
-  width: 80%;
-  margin: 1.5em auto;
-  text-align: center;
-}
 
-.ultimas-musicas h2 {
-  text-transform: uppercase;
-  font-size: 1.5em;
-  color: #ffffff;
-  text-align: center;
-  padding: 0.5em;
-}
 
-.ultimas-musicas iframe {
-  padding-top: 1em;
-}
+
