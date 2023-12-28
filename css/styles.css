@@ -1,5 +1,4 @@
 body {
-  width: 99vw;
   background-color: #000000;
   display: flex;
   flex-direction: column;
@@ -8,22 +7,24 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 80%;
+  height: 10vh;
   max-width: 1720px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: end;
   align-items: center;
 }
 
-aside a {
-  background-color: #FFFFFF;
+header a {
+  background-color: #970000;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  padding: .9em;
+  padding: .5em;
   border-radius: 10px;
 }
 
-aside:hover {
+header:hover {
   animation: translateY 0.8s infinite alternate;
 }
 
@@ -33,15 +34,21 @@ aside:hover {
   }
 
   to {
-    transform: translateY(-8px) scale(1.1);
+    transform: translateY(-2px) scale(1.02);
   }
 }
 
 
 main {
-  width: 99vw;
+  width:100%;
 }
-
+.hero{
+  background-image: url(../images/banner1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: contain;
+}
 .programacao {
   width: 100%;
   display: flex;
