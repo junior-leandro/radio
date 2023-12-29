@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #000000;
   display: flex;
@@ -5,39 +10,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-header {
-  width: 80%;
-  height: 10vh;
-  max-width: 1720px;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-header a {
-  background-color: #970000;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: .5em;
-  border-radius: 10px;
-}
-
-header:hover {
-  animation: translateY 0.8s infinite alternate;
-}
-
-@keyframes translateY {
-  from {
-    transform: translateY(0) scale(1);
-  }
-
-  to {
-    transform: translateY(-2px) scale(1.02);
-  }
-}
-
 
 main {
   width:100%;
@@ -48,7 +20,32 @@ main {
   height: 100vh;
   background-position: center;
   background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items:start;
 }
+.container{
+  width: 100%;
+  
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero img{
+  width: 300px;
+  height: 180px;
+}
+
+.listen a {
+  background-color: #970000;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5em;
+  border-radius: 10px;
+}
+
 .programacao {
   width: 100%;
   display: flex;
