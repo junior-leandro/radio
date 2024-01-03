@@ -71,9 +71,10 @@ main {
   color: #1b1b1b;
 
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url("../images/background-blocks.jpg");
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .news {
@@ -124,4 +125,72 @@ main {
 footer,
 footer a{
   color: #FFFFFF;
+}
+
+.top-8{
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  padding-bottom: 6em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../images/background-blocks.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top-8 h2 {
+  margin: 1.5em auto;
+  font-size: 42px;
+}
+
+.lista-top-8{
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+.capa-do-album{
+  width: 8vw;
+  margin-bottom: 1em;
+}
+
+.img-container{
+  overflow: hidden;
+  width: 8vw;
+  height: 8vw;
+}
+.img-container:hover{
+  border-radius: 2px;
+}
+
+.img-container img{
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+}
+
+.img-container:hover img{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  
+}
+
+.lista-top-8 li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.banda{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+.titulo{
+  font-size: 14px;
 }
