@@ -210,9 +210,9 @@ footer a{
 .patrocinadores-container {
   margin: 2em auto;
   display: grid;
-  height: 80vh;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  height: 60vh;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -229,23 +229,38 @@ footer a{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 5;
 }
 .patrocinador-2 {
   grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.patrocinador-3 {
-  grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 3;
 }
+.patrocinador-3 {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
 .patrocinador-4 {
   grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: linear-gradient(rgba(0, 18, 119, 0.781), rgba(156, 0, 0, 0.842)), url("./imgs/mesa_e_mic.jpeg");
+}
+
+.patrocinador-5 {
+  grid-column-start: 4;
   grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.patrocinador-6 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
