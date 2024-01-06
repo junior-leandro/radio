@@ -36,7 +36,8 @@ main {
   width: 100%;
   height: 100vh;
   background-position: center;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items:start;
@@ -66,7 +67,9 @@ main {
 .programacao {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 3em 0 1em 0;
   color: #1b1b1b;
 
@@ -75,27 +78,14 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.news {
-  background-color: #FFFFFF;
-}
-
-.programacao__div {
-  margin-top: 20px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/mulher.png");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-
 
 }
 
 .programacao h2 {
   color: rgb(90, 4, 124);
-  font-size: 1.8em;
-  margin-bottom: 0.5em;
+  font-size: 2em;
   text-align: center;
+  margin-bottom: .2em;
 }
 
 .programacao h3 {
@@ -105,26 +95,20 @@ main {
 }
 
 .programacao__list {
-  margin-bottom: 4em;
+  margin-bottom: 1em;
+  list-style: none;
 }
 
 .programacao__item {
-  font-size: 1em;
-  margin: 0.7em;
+  font-size: 1.5em;
+  margin: 0.5em;
 }
 
-.pedido-de-musica {
-  text-decoration: none;
-  background-color: #000000;
-  color: #FFFFFF;
-  padding: 28px;
-  margin-left: 1em;
-  text-align: center;
-}
 
 footer,
 footer a{
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .top-8{
