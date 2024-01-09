@@ -105,11 +105,6 @@ main {
 }
 
 
-footer,
-footer a{
-  color: #FFFFFF;
-  text-decoration: none;
-}
 
 .top-8{
   width: 100%;
@@ -247,4 +242,27 @@ footer a{
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+.ouvinte{
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ouvinte-foto{
+  width: 25vw;
+  border: 10px solid red;
+  padding: 2em;
+}
+
+
+
+
+footer,
+footer a{
+  color: #FFFFFF;
+  text-decoration: none;
 }
