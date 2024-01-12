@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Stereo Rock Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='src/player.css' media='all' />
+    <!-- Monospace font for play and pause buttons-->
+    <script src="https://kit.fontawesome.com/8d1641c113.js" crossorigin="anonymous"></script>
+    <!-- OFL font for rest of controls-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+    <!-- if JS is not enabled -->
+    <noscript>
+        <div id="nojs_message">
+            <p>In order for this audio player to function, you need to have javascript enabled. If for any reason you do
+                not wish to use javascript, here is an <a href="stream.mp3">alternative link to an audio stream</a>.</p>
+        </div>
+    </noscript>
+    <!-- main flex container -->
+    <div class="flex_1" id="flex_1">
+        <div class="background">
+            <div class="player">
+                <audio preload="metadata" id="audio">Your browser lacks javascript support, please make use of this
+                    alternative link https://stream.mp3></audio>
+                <p id="artist" title="Current playing artist">STEREO ROCK</p>
+                <p id="song" title="Current playing artist">A Sua Rádio Rock Na internet</p>
+
+                <div class="controls">
+                    <!-- the rotating loading animation-->
+                    <h4 id="loader">
+                        <!-- wraps the play button and for js to listen to on click -->
+                        <div class="loader"></div>
+                    </h4>
+                    <div class="aroundbutton" alt="Run the stream" id="aroundbutton" title="Start the audio stream">
+                        <a class="playbutton">
+                            <i class="fas fa-play fa-fw on" onclick="" id="on"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="quality" title="Higher quality">
+                    <!--
+                    <span class="iconify" data-icon="si-glyph:button-hd" data-inline="false"
+                        style="line-height: 10px;color: rgb(178 44 37);margin: 0.455em 0.3em;font-size: 29px;display: table-cell;">></span>
+                    <input type="checkbox" class="toggle" onclick="check()" id="quality" checked>
+                    -->
+                    <div id="slider">
+                        <span id="current-title"></span>
+                    </div>
+                </div>
+
+                <!-- volume and quality controls-->
+                <span class="iconify" data-icon="fa:volume-down" data-inline="false"
+                    style="color: #343434;height:14px"></span>
+                <input title="Volume" id="vol-control" type="range" min="0" max="100" step="1" value="100"
+                    oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" />
+                <span class="iconify" data-icon="fa:volume-up" data-inline="false"
+                    style="color: #343434;height:14px"></span>
+            </div>
+        </div>
+    </div>
+    <script src="src/player.js"></script>
+
+</body>
+
+</html>
