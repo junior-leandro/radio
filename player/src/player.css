@@ -202,9 +202,8 @@ i.fa-volume-up {
     display: flex;
     padding: 0 4em;
     flex-direction: row;
-    margin-top: 3em;
     justify-content: center;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 @media screen and (max-width: 900px) {
@@ -337,7 +336,7 @@ input[type="checkbox"]:focus {
     display: flex;
     flex-direction: row;
     margin-top: 4em;
-    padding-top: 3em;
+    padding-top: 1em;
     justify-content: center;
     border-top: 1px solid #c8c8c8;
     color: white;
