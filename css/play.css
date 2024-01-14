@@ -1,3 +1,19 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+html::-webkit-scrollbar {
+  width: 0.7rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #700400;
+  border-radius: 3rem;
+}
+
 body {
   background-color: #131313;
   color: #ffffff;
